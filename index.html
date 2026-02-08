@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kenya Fresh Market</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Fresh Farm Produce from Kenya</h2>
+            <p>Supporting local farmers ethically and securely.</p>
+            <a href="product.html" class="btn">View Products</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="featured-grid">
+                <!--  Loaded via JS  -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kenya Fresh Market. All rigths reserved.</p>
+            <p><a href="#privacy">Privacy Notice</a></p>
+            <div id="privacy">
+                At Kenya Fresh Market, we are committed to protecting your privacy in line with Kenya’s Data Protection Act (2019), which regulates the processing of personal data to ensure it is lawful, fair, and transparent. We collect minimal data through our frontend-only registration form (e.g., name, email, password), which is validated client-side and not stored on any server in this demo. No data is transmitted without your consent, and we use JavaScript cookies solely for session identification (e.g., to remember if you’ve registered), expiring after 30 days. This aligns with the Computer Misuse and Cybercrimes Act (2018) by preventing unauthorized access or data misuse. Per the National ICT Policy (2019), we promote ethical digital practices, avoiding surveillance or sharing data with third parties. For guidelines, refer to the Office of the Data Protection Commissioner (ODPC) at www.odpc.go.ke. If you have concerns, contact us at privacy@kenyafreshmarket.co.ke. By using this site, you acknowledge these practices.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./static/js/script.js"></script>
+    <script>
+        // Load the featured products
+        displayProducts(products.slice(0, 4), 'featured-grid');
+    </script>
+</body>
+</html>
