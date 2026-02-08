@@ -1,53 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kona Yote - Cart</title>
-    <link rel="stylesheet" href="./static/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Kona Yote</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="header-inner container">
+          <h1 class="logo">Kona<span>Yote</span></h1>
 
-    <section class="cart-section">
-        <div class="container">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="cart-section">
+          <div class="container">
             <h2>Your Cart</h2>
             <div id="cart-items"></div>
             <div class="cart-summary">
-                <h3>Total: <span id="cart-total">KES 0.00</span></h3>
-                <button class="btn" onclick="if(confirm('Clear cart?')) {localStorage.removeItem('cart'); loadCart(); updateCartCount();}">Clear Cart</button>
-                <button class="btn">Proceed to Checkout (demo only)</button>
+              <h3>Total: <span id="cart-total">KES 0.00</span></h3>
+              <button
+                class="btn"
+                onclick="
+                  if (confirm('Clear cart?')) {
+                    localStorage.removeItem('cart');
+                    loadCart();
+                    updateCartCount();
+                  }
+                "
+              >
+                Clear Cart
+              </button>
+              <button class="btn">Proceed to Checkout (demo only)</button>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
+      </main>
 
-    <footer>
+      <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Kenya Fresh Market. All rights reserved.</p>
-            <p><a href="#privacy">Privacy Notice</a></p>
-            <div id="privacy">
-                At Kenya Fresh Market, we are committed to protecting your privacy in line with Kenya’s Data Protection Act (2019)... [same as previous]
-            </div>
+          <p>© 2026 Kenya Fresh Market. All rights reserved.</p>
+          <p><a href="#privacy">Privacy Notice</a></p>
+          <div id="privacy">
+            At Kenya Fresh Market, we are committed to protecting your privacy
+            in line with Kenya’s Data Protection Act (2019)...
+          </div>
         </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="./static/js/api.js"></script>
     <script src="./static/js/cart.js"></script>
     <script src="./static/js/product.js"></script>
     <script src="./static/js/script.js"></script>
-    <script>
-        
-    </script>
-</body>
+    <script></script>
+  </body>
 </html>

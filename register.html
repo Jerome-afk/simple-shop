@@ -1,54 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authentication</title>
-    <link rel="stylesheet" href="./static/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Kona Yote</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="header-inner container">
+          <h1 class="logo">Kona<span>Yote</span></h1>
 
-    <section class="register-section">
-        <div class="container">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <section class="register-section">
+          <div class="container">
             <h2>Register</h2>
             <form id="register-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" required />
 
-                <button type="submit" class="btn">Register</button>
+              <button type="submit" class="btn">Register</button>
             </form>
             <p id="message"></p>
-        </div>
-    </section>
+          </div>
+        </section>
+      </main>
 
-    <footer>
+      <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Kenya Fresh Market. All rigths reserved.</p>
-            <p><a href="#privacy">Privacy Notice</a></p>
-            <div id="privacy">
-                At Kenya Fresh Market, we are committed to protecting your privacy in line with Kenya’s Data Protection Act (2019), which regulates the processing of personal data to ensure it is lawful, fair, and transparent. We collect minimal data through our frontend-only registration form (e.g., name, email, password), which is validated client-side and not stored on any server in this demo. No data is transmitted without your consent, and we use JavaScript cookies solely for session identification (e.g., to remember if you’ve registered), expiring after 30 days. This aligns with the Computer Misuse and Cybercrimes Act (2018) by preventing unauthorized access or data misuse. Per the National ICT Policy (2019), we promote ethical digital practices, avoiding surveillance or sharing data with third parties. For guidelines, refer to the Office of the Data Protection Commissioner (ODPC) at www.odpc.go.ke. If you have concerns, contact us at privacy@kenyafreshmarket.co.ke. By using this site, you acknowledge these practices.
-            </div>
+          <p>&copy; 2026 Kenya Fresh Market. All rigths reserved.</p>
+          <p><a href="#privacy">Privacy Notice</a></p>
+          <div id="privacy">
+            At Kenya Fresh Market, we are committed to protecting your privacy
+            in line with Kenya’s Data Protection Act (2019), which regulates the
+            processing of personal data to ensure it is lawful, fair, and
+            transparent. We collect minimal data through our frontend-only
+            registration form (e.g., name, email, password), which is validated
+            client-side and not stored on any server in this demo. No data is
+            transmitted without your consent, and we use JavaScript cookies
+            solely for session identification (e.g., to remember if you’ve
+            registered), expiring after 30 days. This aligns with the Computer
+            Misuse and Cybercrimes Act (2018) by preventing unauthorized access
+            or data misuse. Per the National ICT Policy (2019), we promote
+            ethical digital practices, avoiding surveillance or sharing data
+            with third parties. For guidelines, refer to the Office of the Data
+            Protection Commissioner (ODPC) at www.odpc.go.ke. If you have
+            concerns, contact us at privacy@kenyafreshmarket.co.ke. By using
+            this site, you acknowledge these practices.
+          </div>
         </div>
-    </footer>
-    
+      </footer>
+    </div>
+
     <script src="./static/js/auth.js"></script>
-</body>
+  </body>
 </html>

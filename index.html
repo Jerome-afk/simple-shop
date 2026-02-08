@@ -1,58 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kona Yote - Home</title>
-    <link rel="stylesheet" href="./static/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Kona Yote</h1>
-        <nav>
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="header-inner container">
+          <h1 class="logo">Kona<span>Yote</span></h1>
+
+          <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li>
+                <a href="cart.html">Cart <span id="cart-count">0</span></a>
+              </li>
             </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Kone Yote.</h2>
-            <p>Our Corners. <br>Feels local, personal and accessible</p>
-            <a href="product.html" class="btn">View Products</a>
+          </nav>
         </div>
-    </section>
+      </header>
 
-    <section class="featured-products">
-        <div class="container">
+      <main class="page-content">
+        <section class="hero">
+          <div class="container">
+            <h2>Welcome to Kone Yote.</h2>
+            <p>Our Corners. <br />Feels local, personal and accessible</p>
+            <a href="product.html" class="btn">View Products</a>
+          </div>
+        </section>
+
+        <section class="featured-products">
+          <div class="container">
             <h2>Featured Products</h2>
             <div class="product-grid" id="featured-grid">
-                <!--  Loaded via JS  -->
+              <!--  Loaded via JS  -->
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
+      </main>
 
-    <footer>
+      <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Kenya Fresh Market. All rigths reserved.</p>
-            <p><a href="#privacy">Privacy Notice</a></p>
-            <div id="privacy">
-                At Kenya Fresh Market, we are committed to protecting your privacy in line with Kenya’s Data Protection Act (2019), which regulates the processing of personal data to ensure it is lawful, fair, and transparent. We collect minimal data through our frontend-only registration form (e.g., name, email, password), which is validated client-side and not stored on any server in this demo. No data is transmitted without your consent, and we use JavaScript cookies solely for session identification (e.g., to remember if you’ve registered), expiring after 30 days. This aligns with the Computer Misuse and Cybercrimes Act (2018) by preventing unauthorized access or data misuse. Per the National ICT Policy (2019), we promote ethical digital practices, avoiding surveillance or sharing data with third parties. For guidelines, refer to the Office of the Data Protection Commissioner (ODPC) at www.odpc.go.ke. If you have concerns, contact us at privacy@kenyafreshmarket.co.ke. By using this site, you acknowledge these practices.
-            </div>
+          <p>&copy; 2026 Kenya Fresh Market. All rigths reserved.</p>
+          <p><a href="#privacy">Privacy Notice</a></p>
+          <div id="privacy">
+            At Kenya Fresh Market, we are committed to protecting your privacy
+            in line with Kenya’s Data Protection Act (2019), which regulates the
+            processing of personal data to ensure it is lawful, fair, and
+            transparent. We collect minimal data through our frontend-only
+            registration form (e.g., name, email, password), which is validated
+            client-side and not stored on any server in this demo. No data is
+            transmitted without your consent, and we use JavaScript cookies
+            solely for session identification (e.g., to remember if you’ve
+            registered), expiring after 30 days. This aligns with the Computer
+            Misuse and Cybercrimes Act (2018) by preventing unauthorized access
+            or data misuse. Per the National ICT Policy (2019), we promote
+            ethical digital practices, avoiding surveillance or sharing data
+            with third parties. For guidelines, refer to the Office of the Data
+            Protection Commissioner (ODPC) at www.odpc.go.ke. If you have
+            concerns, contact us at privacy@kenyafreshmarket.co.ke. By using
+            this site, you acknowledge these practices.
+          </div>
         </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="./static/js/api.js"></script>
     <script src="./static/js/cart.js"></script>
     <script src="./static/js/product.js"></script>
     <script src="./static/js/script.js"></script>
     <script>
-        // Load the featured products
-        renderProducts(products.slice(0, 8), 'featured-grid');
+      // Load the featured products
+      renderProducts(products.slice(0, 8), "featured-grid");
     </script>
-</body>
+  </body>
 </html>
